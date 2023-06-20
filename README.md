@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to @frc930/frc-data-lib 👋</h1>
+<h1 align="center">@frc930/frc-data-lib</h1>
 <p>
   <a href="https://www.npmjs.com/package/@frc930/frc-data-lib" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/@frc930/frc-data-lib.svg">
