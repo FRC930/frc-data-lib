@@ -1,0 +1,8 @@
+.DS_Store
+.npm
+.eslintcache
+.eslintrc.js
+node_modules/
+example/
+build/
+package-lock.json
