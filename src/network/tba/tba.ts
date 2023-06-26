@@ -2,6 +2,7 @@ import axios, { AxiosInstance } from "axios";
 import { TBAMatch } from "./response-models/match";
 import { TBARanking } from "./response-models/ranking";
 import { TBATeam } from "./response-models/team";
+import { TBAEvent } from "./response-models/event";
 
 export class TBAProvider {
     private api: AxiosInstance;
@@ -27,4 +28,6 @@ export class TBAProvider {
   rankingForTeamAtEvent = async (team: string, eventCode: string): Promise<TBARanking> =>
     (await this.api.get<TBARanking>(`/team/${team}/event/${eventCode}/status`)).data;
   rankingsForEvent = async (eventCode: string, year: string): Promise<TBARanking[]> => (await this.api.get<TBARanking[]>(`/${year}/rankings/${eventCode}`)).data;
+
+  getEvent = async(event: string): Promise<TBAEvent> => (await this.api.get<TBAEvent>(`/event/${event}`)).data;
 }

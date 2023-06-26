@@ -1,6 +1,6 @@
 {
   "name": "@frc930/frc-data-lib",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Typescript Library for Interfacing with Various FRC API's",
   "main": "build/index.js",
   "files": [
